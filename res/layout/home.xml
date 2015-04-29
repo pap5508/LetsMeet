@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@+id/rlMain" android:layout_width="fill_parent"
+	android:layout_height="fill_parent">
+
+	<RelativeLayout 
+		android:id="@+id/rlImage"  
+		android:background="@drawable/letsmeet"
+		android:layout_height="wrap_content" 
+		android:layout_width="fill_parent">
+		
+		<RelativeLayout
+		android:id="@+id/rlForSideLink"
+		android:layout_height="wrap_content"
+		android:layout_width="wrap_content"
+		android:layout_marginTop="130dip"
+		>
+		
+		<Button
+		android:id="@+id/btnContact"
+		android:background="#000000"
+		android:layout_height="wrap_content"
+		android:layout_width="wrap_content"
+		android:text="CONTACT US"
+		android:textColor="#D8D8BF"
+		android:textSize="18sp" android:paddingLeft="15dip"></Button>
+		
+		<Button
+		android:id="@+id/btnBlog"
+		android:background="#000000"
+		android:layout_height="wrap_content"
+		android:layout_width="wrap_content"
+		android:layout_below="@id/btnContact"
+		android:text="BLOG"
+		android:layout_marginTop="15dip"
+		android:textColor="#D8D8BF"
+		android:textSize="18sp" android:paddingLeft="15dip"></Button>
+		
+		
+		
+		<Button
+		android:id="@+id/btnSlideFAQs"
+		android:background="#000000"
+		android:layout_height="wrap_content"
+		android:layout_width="wrap_content"
+		android:text="INBOX"
+		android:layout_below="@id/btnBlog"
+		android:layout_marginTop="15dip"
+		android:textColor="#D8D8BF"
+		android:textSize="18sp" android:paddingLeft="15dip"></Button>
+		
+		<Button
+		android:id="@+id/btnLetsStart"
+		android:background="#000000"
+		android:layout_height="wrap_content"
+		android:layout_width="wrap_content"
+		android:text="LETS START"
+		android:layout_below="@id/btnSlideFAQs"
+		android:layout_marginTop="15dip"
+		android:textColor="#D8D8BF"
+		android:textSize="18sp" android:paddingLeft="15dip"></Button>
+		
+		</RelativeLayout>
+		
+	</RelativeLayout>
+	
+	<RelativeLayout 
+		android:layout_alignParentBottom="true"
+		android:layout_width="wrap_content" 
+		android:id="@+id/rlBtn"
+		android:orientation="horizontal"
+		android:layout_height="wrap_content" 
+		android:background="@drawable/scrollbar">
+		<Button android:text="CONTACT US" android:id="@+id/btnContactUs"
+			android:background="#000000" android:textColor="#D8D8BF"
+			android:paddingLeft="5dip"
+			android:layout_height="wrap_content" android:layout_centerVertical="true"
+			android:layout_width="wrap_content"></Button>
+		<Button android:text="FAQs" android:id="@+id/btnFaqs"
+			android:layout_centerInParent="true" 
+			android:layout_marginLeft="50dip" android:textColor="#D8D8BF"
+			android:background="#000000" android:layout_width="wrap_content"
+			android:layout_centerVertical="true" android:layout_height="wrap_content"></Button>
+		<Button android:text="START" android:id="@+id/btnStart"
+			android:layout_alignParentRight="true" android:layout_centerVertical="true"
+			android:textColor="#D8D8BF" android:background="#00000000"
+			android:paddingRight="5dip"
+			android:layout_height="wrap_content" android:layout_width="wrap_content"></Button>
+	</RelativeLayout>
+
+</RelativeLayout>

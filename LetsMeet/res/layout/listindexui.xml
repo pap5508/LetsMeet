@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="fill_parent"
+  android:id="@+id/rlMain"
+  android:layout_height="fill_parent">
+  <RelativeLayout
+  android:id="@+id/rlTitleBar"
+  android:layout_height="wrap_content"
+  android:layout_width="fill_parent"
+  android:background="@drawable/titlebar">
+  
+  		<Button
+  		android:id="@+id/btnBack"
+  		android:layout_height="wrap_content"
+  		android:layout_width="wrap_content"
+  		android:background="@drawable/backbutton"
+  		android:layout_marginTop="07dip"
+		android:layout_marginLeft="10dip"
+  		></Button>
+  		
+  		<TextView 
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content" 
+			android:id="@+id/tvTitle"
+			android:text="RESTAURANT" 
+			android:textColor="#ffffff" 
+			android:textStyle="normal"
+			android:textSize="20sp" 
+			android:layout_centerInParent="true">
+		</TextView>
+		
+  </RelativeLayout>
+  <RelativeLayout
+  android:id="@+id/rlList"
+  android:layout_height="wrap_content"
+  android:layout_width="fill_parent"
+  android:layout_below="@id/rlTitleBar">
+    <ListView 
+    android:layout_width="fill_parent" 
+    android:layout_height="wrap_content"
+    android:id="@+id/lstListIndexView"
+    android:layout_alignParentLeft="true">
+    </ListView>
+ </RelativeLayout>
+ <RelativeLayout 
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content" 
+		android:background="@drawable/scrollbar"
+		android:layout_alignParentBottom="true"
+		>
+
+		<HorizontalScrollView 
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content" 
+			android:layout_gravity="center">
+			
+			<LinearLayout 
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content" 
+				android:orientation="horizontal">
+
+				<ImageView 
+					android:layout_height="wrap_content"
+					android:layout_width="wrap_content" 
+					android:id="@+id/ivHome"
+					android:layout_alignParentLeft="true" 
+					android:padding="5dip"
+					android:src="@drawable/realestate">
+				</ImageView>
+				
+				<ImageView 
+				android:layout_height="wrap_content"
+					android:layout_width="wrap_content" android:id="@+id/ivSearch"
+					android:layout_alignParentLeft="true" android:padding="5dip"
+					android:src="@drawable/search">
+				</ImageView>
+				<ImageView android:layout_height="wrap_content"
+					android:layout_width="wrap_content" android:id="@+id/ivRestaurant"
+					android:layout_alignParentLeft="true" android:padding="5dip"
+					android:src="@drawable/restaurant">
+				</ImageView>
+				<ImageView android:layout_height="wrap_content"
+					android:layout_width="wrap_content" android:id="@+id/ivShopping"
+					android:layout_alignParentLeft="true" android:padding="5dip"
+					android:src="@drawable/shopping">
+				</ImageView>
+				<ImageView android:layout_height="wrap_content"
+					android:layout_width="wrap_content" android:id="@+id/ivNightLife"
+					android:layout_alignParentLeft="true" android:padding="5dip"
+					android:src="@drawable/nightlife">
+				</ImageView>
+				<ImageView android:layout_height="wrap_content"
+					android:layout_width="wrap_content" android:id="@+id/ivHotelnTravel"
+					android:layout_alignParentLeft="true" android:padding="5dip"
+					android:src="@drawable/hotelstravel">
+				</ImageView>
+				<ImageView android:layout_height="wrap_content"
+					android:layout_width="wrap_content" android:id="@+id/ivHealth"
+					android:layout_alignParentLeft="true" android:padding="5dip"
+					android:src="@drawable/health">
+				</ImageView>
+				<ImageView android:layout_height="wrap_content"
+					android:layout_width="wrap_content" android:id="@+id/ivEducation"
+					android:layout_alignParentLeft="true" android:padding="5dip"
+					android:src="@drawable/education">
+				</ImageView>
+				<ImageView android:layout_height="wrap_content"
+					android:layout_width="wrap_content" android:id="@+id/ivEvent"
+					android:layout_alignParentLeft="true" android:padding="5dip"
+					android:src="@drawable/event">
+				</ImageView>
+				<ImageView android:layout_height="wrap_content"
+					android:layout_width="wrap_content" android:id="@+id/ivReligious"
+					android:layout_alignParentLeft="true" android:padding="5dip"
+					android:src="@drawable/religious">
+				</ImageView>
+				<ImageView android:layout_height="wrap_content"
+					android:layout_width="wrap_content" android:id="@+id/ivRealEstate"
+					android:layout_alignParentLeft="true" android:padding="5dip"
+					android:src="@drawable/realestate">
+				</ImageView>
+
+				<ImageView android:layout_height="wrap_content"
+					android:layout_width="wrap_content" android:id="@+id/ivLocalServices"
+					android:layout_alignParentLeft="true" android:padding="5dip"
+					android:src="@drawable/localservices">
+				</ImageView>
+				
+				<ImageView android:layout_height="wrap_content"
+					android:layout_width="wrap_content" android:id="@+id/ivAutoMotive"
+					android:layout_alignParentLeft="true" android:padding="5dip"
+					android:src="@drawable/automotive">
+				</ImageView>
+
+				<ImageView android:layout_height="wrap_content"
+					android:layout_width="wrap_content" android:id="@+id/ivSetting"
+					android:layout_alignParentLeft="true" android:padding="5dip"
+					android:src="@drawable/setting">
+				</ImageView>
+
+
+			</LinearLayout>
+		</HorizontalScrollView>
+
+	</RelativeLayout>
+	<LinearLayout 
+	android:id="@+id/layoutLoading"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:layout_weight="1"
+	android:gravity="center">
+<!--	android:background="@color/gray"	-->
+			<ProgressBar 
+				android:id="@+id/progressBarLoading"
+				android:layout_width="30dp"
+				android:layout_height="30dp"
+				android:indeterminate="true"
+				android:layout_marginRight="5dp"
+				android:visibility="gone"/>  
+			<TextView 
+				android:id="@+id/txtLoading"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:gravity="center"
+				android:textStyle="normal"
+				android:textSize="@dimen/text_size_medium"
+				android:visibility="visible"
+				android:textColor="@color/black"/>
+	</LinearLayout>
+	
+</RelativeLayout>

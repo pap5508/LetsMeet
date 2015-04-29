@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent">
+  <RelativeLayout
+  android:id="@+id/rlTitleBar"
+  android:layout_height="wrap_content"
+  android:layout_width="fill_parent"
+  android:background="@drawable/titlebar">
+  
+  		<Button
+  		android:id="@+id/btnBack"
+  		android:layout_height="wrap_content"
+  		android:layout_width="wrap_content"
+  		android:background="@drawable/backbutton"
+  		android:layout_marginTop="07dip"
+		android:layout_marginLeft="10dip"
+  		></Button>
+  		
+  		<TextView 
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content" 
+			android:id="@+id/tvTitle"
+			android:text="CONTACT US" 
+			android:textColor="#ffffff" 
+			android:textStyle="normal"
+			android:textSize="20sp" 
+			android:layout_centerInParent="true">
+		</TextView>
+		
+  </RelativeLayout>
+  
+  <RelativeLayout
+  android:id="@+id/rlContactUsI"
+  android:layout_below="@id/rlTitleBar"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent"
+  android:background="@drawable/contactusback">
+  
+  
+	  <Button 
+	  android:layout_height="wrap_content" 
+	  android:text="Email Us" 
+	  android:layout_width="wrap_content"
+	  android:background="@drawable/button"
+	  android:id="@+id/btnEmailUs"
+	  android:textColor="#ffffff" 
+	  android:layout_centerInParent="true">
+	  </Button>
+  
+  </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="hello">Hello World, LetsMeet!</string>
+    <string name="app_name">LetsMeet</string>
+     <string name="parsingtheurl">Parsing the URL...</string>
+     <string name="noItemsFound">No items found</string>
+     <string name="error_Ok">Ok</string>
+     <string name="error_LocationMissing">Please Enter City Name</string>
+</resources>

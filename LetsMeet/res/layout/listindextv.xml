@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent">
+
+  <RelativeLayout
+  android:id="@+id/rlFirst"
+  android:paddingTop="5dip"
+  android:layout_height="wrap_content" 
+  android:layout_width="fill_parent">
+  
+    <TextView 
+    android:layout_width="wrap_content" 
+    android:layout_height="wrap_content" 
+    android:text="Title Name"  
+    android:textColor="#666666"
+    android:layout_marginLeft="7dip"
+    android:id="@+id/tvName">
+    </TextView>
+    
+    <TextView 
+    android:layout_width="wrap_content" 
+    android:layout_height="wrap_content"
+    android:layout_toRightOf="@id/tvName"
+    android:text=" @ "  
+     android:textColor="#666666"
+    android:layout_marginLeft="10dip"
+    android:id="@+id/tvAt">
+    </TextView>
+    
+    
+    <TextView 
+    android:layout_width="wrap_content" 
+    android:layout_height="wrap_content" 
+    android:text="Location"  
+     android:textColor="#666666"
+    android:layout_toRightOf = "@id/tvAt"
+    android:id="@+id/tvLocation"
+    android:layout_marginLeft="10dip">
+    </TextView>
+    
+    <ImageView 
+    android:id="@+id/imgNextView"
+    android:layout_width="20dip"
+    android:layout_height="20dip"
+    android:layout_alignParentRight="true"
+    android:background="@drawable/rightarrowlm"
+    android:layout_marginRight="5dip"
+    ></ImageView>
+    
+   </RelativeLayout>
+  
+  <RelativeLayout
+   android:id="@+id/rlImageInfo"
+   android:layout_below="@id/rlFirst"
+   android:layout_height="wrap_content" 
+   android:layout_width="wrap_content">
+   
+   <ImageView
+   android:id="@+id/imgIndex"
+   android:src="@drawable/panpacific"
+   android:layout_height="wrap_content"
+   android:layout_width="wrap_content"
+   android:layout_marginLeft="7dip">
+   </ImageView>
+   
+  </RelativeLayout>
+  
+  <RelativeLayout
+   android:id="@+id/rlAddInfo"
+   android:layout_below="@id/rlFirst"
+   android:layout_toRightOf="@id/rlImageInfo"
+   android:layout_height="wrap_content" 
+   android:layout_width="wrap_content"
+   android:paddingBottom="10dip">
+   
+    
+     <TextView 
+    android:layout_width="wrap_content" 
+    android:layout_height="wrap_content" 
+    android:text="Address"
+    android:textColor="#666666"
+    android:id="@+id/tvAddressDemo"
+     android:layout_marginLeft="10dip">
+    </TextView>
+    
+   <TextView 
+    android:layout_width="wrap_content" 
+    android:layout_height="wrap_content" 
+    android:text="Address"
+    android:layout_below="@id/tvAddressDemo"
+    android:textColor="#666666"
+    android:id="@+id/tvAdd1"
+     android:layout_marginLeft="10dip">
+    </TextView>
+    
+    <TextView 
+    android:layout_width="wrap_content" 
+    android:layout_height="wrap_content" 
+    android:text="Zip"
+    android:layout_below="@id/tvAdd1"
+     android:textColor="#666666"
+    android:id="@+id/tvZip"
+     android:layout_marginLeft="10dip">
+    </TextView>
+    
+    <TextView 
+    android:layout_width="wrap_content" 
+    android:layout_height="wrap_content" 
+    android:text="State"
+    android:layout_below="@id/tvAdd1"
+    android:layout_toRightOf="@id/tvZip"
+    android:textColor="#666666"
+    android:id="@+id/tvState"
+    android:layout_marginLeft="10dip">
+    </TextView>
+    
+    
+	<ImageView 
+	android:id="@+id/imgPhoneDemo"
+	android:layout_width="20dip"
+	android:layout_height="20dip"
+	android:layout_below="@id/tvZip"
+	android:layout_marginLeft="10dip"
+	android:background="@drawable/mobile"
+	></ImageView>
+    
+    <TextView 
+    android:layout_width="wrap_content" 
+    android:layout_height="wrap_content" 
+    android:text="Phone"
+    android:layout_below="@id/tvState"
+    android:layout_toRightOf="@id/imgPhoneDemo"
+    android:textColor="#666666"
+    android:id="@+id/tvPhone"
+    android:layout_marginLeft="5dip">
+    </TextView>
+    
+   <ImageView
+   android:id="@+id/imgRating"
+   android:layout_below="@id/imgPhoneDemo"
+   android:layout_height="wrap_content"
+   android:layout_width="wrap_content" 
+   android:background="@drawable/rating"
+   android:layout_marginTop="6dip"
+   android:layout_marginLeft="10dip">
+   </ImageView>
+   
+   <TextView 
+    android:layout_toRightOf="@id/imgRating"
+    android:layout_width="wrap_content" 
+    android:layout_height="wrap_content" 
+    android:layout_below="@id/imgPhoneDemo"
+    android:text="Review"
+     android:textColor="#666666"
+    android:id="@+id/tvReviewCount"
+    android:layout_marginLeft="10dip">
+    </TextView>
+    
+   </RelativeLayout>  
+    
+
+</RelativeLayout>

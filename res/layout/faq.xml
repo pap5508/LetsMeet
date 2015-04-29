@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent">
+  
+  <RelativeLayout
+  android:id="@+id/rlTitleBar"
+  android:layout_height="wrap_content"
+  android:layout_width="fill_parent"
+  android:background="@drawable/titlebar">
+  
+  		<Button
+  		android:id="@+id/btnBack"
+  		android:layout_height="wrap_content"
+  		android:layout_width="wrap_content"
+  		android:background="@drawable/backbutton"
+  		android:layout_marginTop="07dip"
+		android:layout_marginLeft="10dip"
+  		></Button>
+  		
+  		<TextView 
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content" 
+			android:id="@+id/tvName"
+			android:text="FAQs" 
+			android:textColor="#ffffff" 
+			android:textStyle="normal"
+			android:textSize="20sp" 
+			android:singleLine="true"
+			android:layout_centerInParent="true">
+		</TextView>
+		
+  </RelativeLayout>
+ 
+ <RelativeLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_below="@id/rlTitleBar"
+  android:layout_width="fill_parent" 
+  android:layout_height="fill_parent">
+  
+    <ScrollView android:id="@+id/scrollView1" android:layout_height="fill_parent" android:layout_width="fill_parent">
+        <LinearLayout android:id="@+id/linearLayout1" android:layout_width="fill_parent" android:layout_height="fill_parent" android:orientation="vertical">
+           
+            <TextView
+	             android:layout_height="wrap_content" 
+	             android:text="Q-1 What kind of mobile apps you developed ?" 
+	             android:id="@+id/tvq1" 
+	             android:layout_width="fill_parent" android:layout_marginLeft="10px" android:clickable="false" android:editable="false" android:textStyle="bold" android:layout_marginTop="10px">
+            </TextView>
+            
+            <TextView 
+	            android:text="A. iPhone Application Development,iPad Application Development,Android Application Development,Blackberry Application Development,Windows Mobile Application Development,Symbian Application Development."
+			    android:id="@+id/tva1"  
+	            android:layout_width="fill_parent" 
+	            android:layout_height="wrap_content" 
+	            android:gravity="left|center_horizontal" 
+	            android:layout_marginLeft="10px" android:layout_marginTop="10px">
+            </TextView>
+   		
+   			<TextView
+	             android:layout_height="wrap_content" 
+	             android:text="Q.-2 Whom I should contact to develope mobile application ?" 
+	             android:id="@+id/tvq2" 
+	             android:layout_width="fill_parent" android:layout_marginLeft="10px" android:clickable="false" android:editable="false" android:textStyle="bold" android:layout_marginTop="10px">
+            </TextView>
+            
+            <TextView 
+	            android:text="A.  You contact us on sales@niftymobileapps.com and we will get back to you within 24 hrs."
+			    android:id="@+id/tva2"  
+	            android:layout_width="fill_parent" 
+	            android:layout_height="wrap_content" 
+	            android:gravity="left|center_horizontal" 
+	            android:layout_marginLeft="10px" android:layout_marginTop="10px">
+            </TextView>
+   		
+        	<TextView
+	             android:layout_height="wrap_content" 
+	             android:text="Q-3 Do you provide any support for submitting app to android market?" 
+	             android:id="@+id/tvq3" 
+	             android:layout_width="fill_parent" android:layout_marginLeft="10px" android:clickable="false" android:editable="false" android:textStyle="bold" android:layout_marginTop="10px">
+            </TextView>
+            
+            <TextView 
+	            android:text="A. Yes, We will submit application on behalf of you to the android market for your account."
+			    android:id="@+id/tva3"  
+	            android:layout_width="fill_parent" 
+	            android:layout_height="wrap_content" 
+	            android:gravity="left|center_horizontal" 
+	            android:layout_marginLeft="10px" android:layout_marginTop="10px">
+            </TextView>
+        
+      	 	<TextView
+	             android:layout_height="wrap_content" 
+	             android:text="Q-4 Do you provide after sale support?" 
+	             android:id="@+id/tvq4" 
+	             android:layout_width="fill_parent" android:layout_marginLeft="10px" android:clickable="false" android:editable="false" android:textStyle="bold" android:layout_marginTop="10px">
+            </TextView>
+            
+            <TextView 
+	            android:text="A. Yes we do support after sale. Once the application is done if you got any problem within 60 days we will give support without any charge."
+			    android:id="@+id/tva4"  
+	            android:layout_width="fill_parent" 
+	            android:layout_height="wrap_content" 
+	            android:gravity="left|center_horizontal" 
+	            android:layout_marginLeft="10px" android:layout_marginTop="10px">
+            </TextView>
+   		
+   			<TextView
+	             android:layout_height="wrap_content" 
+	             android:text="Q-5 What types of apps you develope?" 
+	             android:id="@+id/tvq5" 
+	             android:layout_width="fill_parent" android:layout_marginLeft="10px" android:clickable="false" android:editable="false" android:textStyle="bold" android:layout_marginTop="10px">
+            </TextView>
+            
+            <TextView 
+	            android:text="A. We develop Social media applications, Location based application, Store based application, multimedia application, Web based application etc.."
+			    android:id="@+id/tva5"  
+	            android:layout_width="fill_parent" 
+	            android:layout_height="wrap_content" 
+	            android:gravity="left|center_horizontal" 
+	            android:layout_marginLeft="10px" android:layout_marginTop="10px">
+            </TextView>
+   		
+        	<TextView
+	             android:layout_height="wrap_content" 
+	             android:text="Q-6 Will you provide references to the existing clients?" 
+	             android:id="@+id/tvq6" 
+	             android:layout_width="fill_parent" android:layout_marginLeft="10px" android:clickable="false" android:editable="false" android:textStyle="bold" android:layout_marginTop="10px">
+            </TextView>
+            
+            <TextView 
+	            android:text="A. Yes, Reference of existing clients will be provided on demand."
+			    android:id="@+id/tva6"  
+	            android:layout_width="fill_parent" 
+	            android:layout_height="wrap_content" 
+	            android:gravity="left|center_horizontal" 
+	            android:layout_marginLeft="10px" android:layout_marginTop="10px">
+            </TextView>
+            
+            <TextView
+	             android:layout_height="wrap_content" 
+	             android:text="Q-7 On which device this kind of application will work?" 
+	             android:id="@+id/tvq7" 
+	             android:layout_width="fill_parent" android:layout_marginLeft="10px" android:clickable="false" android:editable="false" android:textStyle="bold" android:layout_marginTop="10px">
+            </TextView>
+            
+            <TextView 
+	            android:text="A. This application will work on any android os devices but we can also develope this for ipad and ipod touch devices and for playbook as well."
+			    android:id="@+id/tva7"  
+	            android:layout_width="fill_parent" 
+	            android:layout_height="wrap_content" 
+	            android:gravity="left|center_horizontal" 
+	            android:layout_marginLeft="10px" android:layout_marginTop="10px">
+            </TextView>
+   		
+   			<TextView
+	             android:layout_height="wrap_content" 
+	             android:text="Q-8 What is the cost to publish this type of android application on android market?" 
+	             android:id="@+id/tvq8" 
+	             android:layout_width="fill_parent" android:layout_marginLeft="10px" android:clickable="false" android:editable="false" android:textStyle="bold" android:layout_marginTop="10px">
+            </TextView>
+            
+            <TextView 
+	            android:text="A. You will need apple account which will cost USD25.00 per year. In which apple people will handle all the task of store for the application."
+			    android:id="@+id/tva8"  
+	            android:layout_width="fill_parent" 
+	            android:layout_height="wrap_content" 
+	            android:gravity="left|center_horizontal" 
+	            android:layout_marginLeft="10px" android:layout_marginTop="10px">
+            </TextView>
+   		
+        	<TextView
+	             android:layout_height="wrap_content" 
+	             android:text="Q-9 I already have one store application, Can you add some features and upgrade the version of my application?" 
+	             android:id="@+id/tvq9" 
+	             android:layout_width="fill_parent" android:layout_marginLeft="10px" android:clickable="false" android:editable="false" android:textStyle="bold" android:layout_marginTop="10px">
+            </TextView>
+            
+            <TextView 
+	            android:text="A. Yes, We can modify the existing store application which will include more features."
+			    android:id="@+id/tva9"  
+	            android:layout_width="fill_parent" 
+	            android:layout_height="wrap_content" 
+	            android:gravity="left|center_horizontal" 
+	            android:layout_marginLeft="10px" android:layout_marginTop="10px">
+            </TextView>
+            
+        </LinearLayout>
+       
+ 	</ScrollView>
+  
+ </RelativeLayout>
+ 
+ 
+  
+</RelativeLayout>
